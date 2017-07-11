@@ -1,0 +1,23 @@
+/* Materialize Sticky Footer using Flexbox*/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  /* Contra Kode */
+.className {
+  content:url('IMAGE URL FROM BEFORE');
+  position:fixed;
+  width: YOUR WIDTH;
+  height: YOUR HEIGHT;
+  left:50%;
+  bottom:30px;
+  background-position:0px -178px;
+  z-index:1000;
+}
