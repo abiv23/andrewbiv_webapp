@@ -9,6 +9,13 @@
   background-color: #fff;
 }
 
+.home-logo {
+  padding-left: 20rem;
+  padding-right: 20rem;
+  height: 4rem;
+  width: auto;
+}
+
 /*
 ==============
   Footer
@@ -49,7 +56,7 @@ body {
 }
 
 .hero-header {
-  padding-top: 25rem;
+  padding-top: 15rem;
   text-align: center;
   margin: 0;
   font-family: 'Raleway';
