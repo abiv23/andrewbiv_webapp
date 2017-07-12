@@ -1,15 +1,13 @@
-// Cheat Codes
+// Konami Code
 neededkeys = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65], started = false, count = 0;
 $(document).keydown(function(e) {
     key = e.keyCode;
     if (!started) {
-        console.log('keydown')
         if (key == 38) {
             started = true;
         }
     }
     if (started) {
-        console.log('code listener running')
         if (neededkeys[count] == key) {
             count++;
         } else {
