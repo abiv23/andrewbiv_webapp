@@ -2,6 +2,11 @@ $(document).ready(function() {
     materializeParallax();
 })
 
+/* materialize toast */
+
+var $toastContent = $('<span>Cheat Mode Unlocked</span>');
+Materialize.toast($toastContent, 5000);
+
 /* materialize scrollfire */
 var options = [{
     selector: '#staggered-test',
