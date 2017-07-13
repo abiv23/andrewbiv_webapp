@@ -2,12 +2,25 @@ $(document).ready(function() {
     materializeParallax();
 })
 
-/* materialize toast */
+/* vanashing top nav */
 
-var $toastContent = $('<span>Cheat Mode Unlocked</span>');
-Materialize.toast($toastContent, 5000);
+$("#nav-drop").hide();
+
+$("#cityclick").mouseover(function() {
+    $("#citydrop").slideDown('slow');
+});
+
+$("#wrapper").mouseleave(function() {
+    $("#citydrop").slideUp('slow');
+});
+
+/* materialize toast */
+/* for introduction of KonamiCode, still needs to be intergrated */
+// var $toastContent = $('<span>Cheat Mode Unlocked</span>');
+// Materialize.toast($toastContent, 5000);
 
 /* materialize scrollfire */
+/* for intro of project cards with animation not intergrated yet */
 var options = [{
     selector: '#staggered-test',
     offset: 50,
@@ -34,6 +47,8 @@ var options = [{
     }
 }];
 Materialize.scrollFire(options);
+
+/* materializeParallax */
 
 function materializeParallax() {
     $('.parallax').parallax();
