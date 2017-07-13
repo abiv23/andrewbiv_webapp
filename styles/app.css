@@ -127,6 +127,10 @@ body {
   padding-top: .5rem;
 }
 
+.scroll-text {
+  margin-top: 80vh;
+}
+
 /*
 ==============
   RetroPie
