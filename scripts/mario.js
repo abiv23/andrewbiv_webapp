@@ -18,3 +18,9 @@ $(document).ready(function() {
     keys.forEach(key => key.addEventListener('transitionend', removeTransition));
     window.addEventListener('keydown', playSound);
 })
+
+function noNavStart() {
+    window.scroll(0, 65);
+}
+
+noNavStart();

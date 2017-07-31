@@ -176,18 +176,6 @@ body {
   background-size: cover;
 }
 
-/*
-====================
-  Mario Soundboard
-==================== */
-
-.mario-soundboard-wallpaper {
-  height: 100%;
-  width: 100%;
-  background-image: url(/assets/images/super_mario_bros_wallpaper.jpg);
-}
-
-
 
 /*
 ======================================
