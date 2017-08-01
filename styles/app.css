@@ -73,6 +73,15 @@ body {
   font-size: 6rem;
 }
 
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .hero-subheader {
   padding-bottom: 20rem;
   text-align: center;
@@ -100,6 +109,18 @@ body {
   height: 40vh;
 }
 
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+
+/* work on getting the hover effect working https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
+.hover-image {
+  opacity: 1;
+  backface-visibility: hidden;
+  transition: .5s ease;
+}
+
 /* not working
 .transparent-nav {
   background-color: rgba(0,0,0,0);
@@ -112,7 +133,8 @@ body {
 
 .seo-chart{
   height: 60vh;
-  width: 100%
+  width: 100%;
+  padding: 0 5rem;
 }
 
 .property-scroll {
@@ -125,6 +147,10 @@ body {
   height: 25vh;
   width: auto;
   padding-top: .5rem;
+}
+
+.scroll-text {
+  margin-top: 80vh;
 }
 
 /*
@@ -154,6 +180,7 @@ body {
   padding-bottom: 0;
   background-size: cover;
 }
+
 
 /*
 ======================================
