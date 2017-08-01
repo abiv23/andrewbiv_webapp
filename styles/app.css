@@ -109,6 +109,11 @@ body {
   height: 40vh;
 }
 
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+
 /* work on getting the hover effect working https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
 .hover-image {
   opacity: 1;
