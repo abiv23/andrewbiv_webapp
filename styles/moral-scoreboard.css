@@ -1,0 +1,113 @@
+/* Materialize imported */
+
+/*
+============================
+      GLOBAL OVERRIDES
+============================
+*/
+
+
+html {
+    font-family: Trebuchet, serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+
+/*
+============================
+        NAV
+============================
+*/
+
+nav {
+    background-color: #192F6B;
+}
+
+nav .brand-logo {
+    color: #e0e0e0;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+}
+
+/*
+============================
+        FOOTER
+============================
+*/
+
+footer.page-footer {
+    background-color: #192F6B;
+}
+
+.footer-copyright div {
+    background-color: #192F6B;
+}
+
+/*
+============================
+        HOME
+============================
+*/
+
+.hero-label {
+    color: #b71c1c;
+    padding: 12vh 0 0 0;
+}
+
+#playerLink {
+    color: #b71c1c;
+}
+
+h4 {
+    color: #b71c1c;
+}
+
+input[type=text]:focus:not([readonly]) {
+    border-bottom: 2px solid red;
+    box-shadow: none;
+}
+
+.teamText1 {
+    height: 1vh;
+}
+
+.details {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.details:hover {
+  text-decoration: none;
+}
+
+/*
+============================
+        ABOUT
+============================
+*/
+
+.about-text {
+  padding: 5vh 10vw 5 10vw;
+  margin: 2vh 5vw 0 5vw;
+  font-size: 1.5em;
+}
+
+.about-label {
+  color: #b71c1c;
+  padding: 2vh 0 0 0;
+}
+
+.about-underlabel {
+  color: #b71c1c;
+}

@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    noNavStart();
+
     function removeTransition(e) {
         if (e.propertyName !== 'transform') return;
         e.target.classList.remove('playing');
@@ -22,5 +24,3 @@ $(document).ready(function() {
 function noNavStart() {
     window.scroll(0, 65);
 }
-
-noNavStart();
