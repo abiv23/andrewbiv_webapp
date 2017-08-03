@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $(document).keydown(keyCode);
     $('.keyCodeIs').hide();
+    $('.key').hide();
 })
 
 function keyCode(e) {
@@ -13,6 +14,7 @@ function keyCode(e) {
     $('.keycode-intro').hide();
     $('.keycode').text(keyCoded)
     $('.key').text(keyUp);
+    $('.key').show();
     $('.keyCodeIs').show();
 }
 

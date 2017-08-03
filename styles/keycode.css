@@ -27,12 +27,19 @@ main {
 ============================
 */
 
-.key {
+a.waves-effect.waves-light.btn.key {
   font-weight: bolder;
-  font-size: 10rem;
-  padding: 0 0;
+  font-size: 3rem;
+  padding: 1rem 1rem 3rem 1rem;
   margin: 0 0;
   color: black;
+  background-color: #A9A9A9;
+  cursor: default;
+}
+
+a.waves-effect.waves-light.btn.key:hover {
+  text-decoration: none;
+  cursor: default;
 }
 
 .keycode {
