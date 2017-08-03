@@ -4,14 +4,14 @@ $(document).ready(function() {
 })
 
 function keyCode(e) {
+    //hard to degbug with preventDefault, erase this once in production
+    // event.preventDefault();
     clearOut();
-    keycodeScroll();
     let keyCoded = e.keyCode;
     let key = e.key;
     const keyUp = key.toUpperCase();
     $('.keycode-intro').hide();
     $('.keycode').text(keyCoded)
-    $('.keycode');
     $('.key').text(keyUp);
     $('.keyCodeIs').show();
 }
@@ -19,9 +19,4 @@ function keyCode(e) {
 function clearOut() {
     $('.keycode').empty();
     $('.key').empty();
-}
-
-function keycodeScroll() {
-    console.log('in key code scroll')
-    $(document).scrollTop($('.keycode').offset().top);
 }
