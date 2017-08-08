@@ -20,7 +20,7 @@ var options = [{
     selector: '#scrollToast',
     offset: 20,
     callback: function(el) {
-        Materialize.toast("Conatct me at abiv23@gmail.com", 8000)
+        Materialize.toast("Contact me at abiv23@gmail.com", 8000)
     }
 
 }, {
