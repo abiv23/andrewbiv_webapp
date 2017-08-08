@@ -83,11 +83,6 @@ body {
   padding-bottom: 22rem;
 }
 
-/*.hero-project {
-  padding: 0 0 10rem 0;
-
-}*/
-
 .sub-header {
   text-align: center;
   font-family: 'Raleway', 'sans-serif';
@@ -121,62 +116,6 @@ body {
 .transparent-nav {
   background-color: rgba(0,0,0,0);
 } */
-
-/*
-==============
-  SEO
-============== */
-
-.seo-chart{
-  height: 60vh;
-  width: 100%;
-  padding: 0 5rem;
-}
-
-.property-scroll {
-  height: 180vh;
-  width: auto;
-  padding: .5rem 0 0 0;
-}
-
-.ux-ui {
-  height: 25vh;
-  width: auto;
-  padding-top: .5rem;
-}
-
-.scroll-text {
-  margin-top: 80vh;
-}
-
-/*
-==============
-  RetroPie
-============== */
-
-.retropie-image {
-  height: 40vh;
-}
-
-/* potentially global */
-.card-header {
-  font-size: 2rem;
-}
-
-.retro-space {
-  margin-bottom: 2.5rem;
-}
-
-.hero-image-retropie {
-  background-image: url(../assets/images/retropie_menu.jpg);
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  margin-top: 5rem;
-  padding-bottom: 0;
-  background-size: cover;
-}
-
 
 /*
 ======================================

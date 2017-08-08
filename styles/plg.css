@@ -1,0 +1,12 @@
+/*
+==============
+  PLG
+============== */
+
+.plg-image {
+  height: 55vh;
+  width: auto;
+  padding: 1rem 5rem;
+  min-height: 20vh;
+  border-top: 1px solid black;
+}

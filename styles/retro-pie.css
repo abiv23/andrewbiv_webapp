@@ -1,0 +1,27 @@
+/*
+==============
+  RetroPie
+============== */
+
+.retropie-image {
+  height: 40vh;
+}
+
+/* potentially global */
+.card-header {
+  font-size: 2rem;
+}
+
+.retro-space {
+  margin-bottom: 2.5rem;
+}
+
+.hero-image-retropie {
+  background-image: url(../assets/images/retropie_menu.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+  padding-bottom: 0;
+  background-size: cover;
+}
