@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    noNavStart();
 
     function removeTransition(e) {
         if (e.propertyName !== 'transform') return;
@@ -20,7 +19,3 @@ $(document).ready(function() {
     keys.forEach(key => key.addEventListener('transitionend', removeTransition));
     window.addEventListener('keydown', playSound);
 })
-
-function noNavStart() {
-    window.scroll(0, 65);
-}
