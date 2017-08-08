@@ -17,16 +17,30 @@ $(document).ready(function() {
 
 /* scrollfire initialize*/
 var options = [{
-    selector: '#scrollToast',
+    selector: '#contactToast',
     offset: 20,
     callback: function(el) {
-        Materialize.toast("Contact me at abiv23@gmail.com", 8000)
+        Materialize.toast('<a href="mailto:abiv23@gmail.com">' + 'Contact me at abiv23@gmail.com' + '</a>', 8000)
     }
 
 }, {
-    selector: '#scrollToast',
+    selector: '#aboutToast',
     offset: 200,
-    callback: function() {}
+    callback: function(el) {
+        Materialize.toast('<a href="/projects.html">' + "See my projects" + '</a>', 8000)
+    }
+}, {
+    selector: '#seoToast',
+    offset: 200,
+    callback: function(el) {
+        Materialize.toast('<a href="/porch-light.html">' + "See my Development work" + '</a>')
+    }
+}, {
+    selector: '#plgToast',
+    offset: 200,
+    callback: function(el) {
+        Materialize.toast('<a href="/seo.html">' + "See my SEO work" + '</a>')
+    }
 }];
 
 
