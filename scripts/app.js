@@ -25,21 +25,21 @@ var options = [{
 
 }, {
     selector: '#aboutToast',
-    offset: 200,
+    offset: 20,
     callback: function(el) {
         Materialize.toast('<a href="/projects.html">' + "See my projects" + '</a>', 8000)
     }
 }, {
     selector: '#seoToast',
-    offset: 200,
+    offset: 20,
     callback: function(el) {
-        Materialize.toast('<a href="/porch-light.html">' + "See my Development work" + '</a>')
+        Materialize.toast('<a href="/porch-light.html">See my Development work</a>')
     }
 }, {
     selector: '#plgToast',
-    offset: 200,
+    offset: 20,
     callback: function(el) {
-        Materialize.toast('<a href="/seo.html">' + "See my SEO work" + '</a>')
+        Materialize.toast('<a href="/seo.html">See my SEO work</a>')
     }
 }];
 
