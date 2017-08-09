@@ -7,22 +7,32 @@
 .body {
   display:flex;
   flex:1;
-  min-height: 100vh;
   align-items: center;
 }
 
+.clock-headline {
+  height: .1vh;
+  font-size: 2rem;
+}
+
 .clock-background {
-  background-color: grey;
+  background-color: lightblue;
+  height: 40vh;
 }
 
 .clock {
-  position: absolute;
   height: 20rem;
   width: 20rem;
   border: 20px solid white;
   border-radius: 50%;
-  margin: 3rem auto;
-  /*padding: 2rem;*/
+  margin: 10rem auto;
+  padding: 2rem;
+  position: relative;
+  box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
 }
 
 .clockface {
@@ -34,17 +44,77 @@
   width: 50%;
   height: .20rem;
   background: black;
+  position: absolute;
+  right: 50%;
   top: 50%;
+  transform-origin: 100%; /* make pivot point the far right */
+  transform: rotate(90deg);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0, 3.91); /* makes tick shake like a clock, get from chrome tools inspection */
 }
 
 .hour-hand {
-
+  width: 5rem;
 }
 
 .min-hand {
-
+  width: 7rem;
 }
 
 .second-hand {
+  width: 8rem;
+  background: red;
+}
 
+/*
+===============
+  Footer Clock
+===============
+*/
+
+.footer-clock-tag {
+  size: 1rem;
+}
+
+.footer-clock {
+  height: 4.5rem;
+  width: 4.5rem;
+  border: .25rem solid white;
+  border-radius: 50%;
+  margin: 2rem auto;
+  padding: .5;
+  position: relative;
+  box-shadow:
+        0 0 0 .25rem rgba(0,0,0,0.1),
+        inset 0 0 0 .25rem #EFEFEF,
+        inset 0 0 .8rem black,
+        0 0 .8rem rgba(0,0,0,0.2);
+}
+
+.footer-hand {
+  width: 50%;
+  background: black;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform-origin: 100%; /* make pivot point the far right */
+  transform: rotate(90deg);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0, 3.91); /* makes tick shake like a clock, get from chrome tools inspection */
+}
+
+.footer-hour-hand {
+  width: 1.3rem;
+  height: .12rem;
+}
+
+.footer-min-hand {
+  width: 1.75rem;
+  height: .08rem;
+}
+
+.footer-second-hand {
+  width: 1.75rem;
+  background: red;
+  height: .05rem;
 }
