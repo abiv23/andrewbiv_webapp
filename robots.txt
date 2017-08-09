@@ -1,5 +1,0 @@
-User-agent: t-1000
-Disallow: /john-connor.html
-
-User-agent: *
-Allow: /
