@@ -1,0 +1,4 @@
+User-agent: t-1000
+Disallow: /john-connor
+
+Sitemap: https://andrew-biv.com/sitemap.xml
