@@ -50,7 +50,7 @@ body {
   .hero-image {
     background-image: url(../assets/images/Continental_Divide.jpg);
     background-attachment: fixed;
-    background-position: top;
+    /*background-position: top;*/
     background-repeat: no-repeat;
     padding-top: 0;
     background-size: cover;
