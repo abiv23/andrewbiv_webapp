@@ -9,3 +9,7 @@
   border-radius: 50%;
   height: 30vh;
 }
+
+.panel-space {
+  padding: 2rem 0 0 0;
+}

@@ -47,70 +47,69 @@ body {
   ==============
     HomePage
   ============== */
+  .hero-image {
+    background-image: url(../assets/images/Continental_Divide.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: cover;
+    height: 100vh;
+  }
 
-.hero-image {
-  background-image: url(../assets/images/Continental_Divide.jpg);
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  padding-top: 0;
-  background-size: cover;
-}
+  .hero-gradient {
+    width: auto;
+    height: 100%;
+    background-color:rgba(54, 202, 232, 0.8);
+    color:#fff;
+  }
 
-.hero-gradient {
-  width: auto;
-  height: 100%;
-  background-color:rgba(54, 202, 232, 0.8);
-  color:#fff;
-}
+  .hero-header {
+    padding-top: 15rem;
+    text-align: center;
+    font-family: 'Raleway', 'sans-serif';
+    margin: 0 0;
+    font-weight: bold;
+    font-size: 4rem;
+  }
 
-.hero-header {
-  padding-top: 15rem;
-  text-align: center;
-  font-family: 'Raleway', 'sans-serif';
-  margin: 0 0;
-  font-weight: bold;
-  font-size: 6rem;
-}
+  .hero-subheader {
+    text-align: center;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 1rem;
+    line-height: .01;
+    color: black;
+    font-weight: bold;
+  }
 
-.hero-subheader {
-  text-align: center;
-  font-family: 'Raleway', 'sans-serif';
-  font-size: 1.75rem;
-  line-height: .01;
-  color: black;
-  font-weight: bold;
-  padding-bottom: 22rem;
-}
+  .sub-header {
+    text-align: center;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+  }
 
-.sub-header {
-  text-align: center;
-  font-family: 'Raleway', 'sans-serif';
-  font-size: 4rem;
-  font-weight: bold;
-  color: black;
-}
+  .sub-card {
+    font-size: .75rem;
+    line-height: 1rem;
+  }
 
-.sub-card {
-  font-size: .75rem;
-  line-height: 1rem;
-}
+  .project-image {
+    height: 40vh;
+  }
 
-.project-image {
-  height: 40vh;
-}
-
-.card-link {
-  text-decoration: none;
-  color: black;
-}
+  .card-link {
+    text-decoration: none;
+    color: black;
+  }
 
 /* work on getting the hover effect working https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
-.hover-image {
+/*.hover-image {
   opacity: 1;
   backface-visibility: hidden;
   transition: .5s ease;
-}
+}*/
 
 /* not working
 .transparent-nav {
@@ -123,8 +122,8 @@ body {
 ====================================== */
 
 /* Smartphones (portrait) ----------- */
+/* built mobile first, shouldn't need this */
 @media only screen and (max-width : 320px) {
-/* Styles */
 }
 
 
@@ -135,8 +134,47 @@ body {
 
 
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-/* Styles */
+@media only screen  and (min-width : 680px) {
+
+  .hero-header {
+    padding-top: 20rem;
+    text-align: center;
+    font-family: 'Raleway', 'sans-serif';
+    margin: 0 0;
+    font-weight: bold;
+    font-size: 6rem;
+  }
+
+  .hero-subheader {
+    text-align: center;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 1.75rem;
+    line-height: .01;
+    color: black;
+    font-weight: bold;
+  }
+
+  .sub-header {
+    text-align: center;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+  }
+
+  .sub-card {
+    font-size: .75rem;
+    line-height: 1rem;
+  }
+
+  .project-image {
+    height: 40vh;
+  }
+
+  .card-link {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 /* Large screens ----------- */
