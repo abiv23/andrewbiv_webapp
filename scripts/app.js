@@ -24,7 +24,7 @@ var options = [{
     selector: '#contactToast',
     offset: 20,
     callback: function(el) {
-        Materialize.toast('<a href="/contact">' + 'Let&rsquo;s talk! Contact me' + '</a>', 8000)
+        Materialize.toast('<a href="/contact.html">' + 'Let&rsquo;s talk! Contact me' + '</a>', 8000)
     }
 
 }, {
