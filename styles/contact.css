@@ -1,0 +1,84 @@
+/*
+================
+    Contact
+================
+*/
+
+.form-top {
+  padding-top: 2rem;
+  font-size: 1.3rem;
+}
+
+.contact-hero {
+  background-image: url('../assets/images/mountains.jpeg');
+  background-size: cover;
+  repeat: no-repeat;
+}
+
+.contact-hero-gradient {
+  width: auto;
+  height: 100%;
+  background-color:rgba(255,255,255, .6);
+  color:#000;
+}
+
+/* form validation anti-spam */
+#honeypot {
+    display: none; /*makes the field not visible to humans*/
+}
+
+.thankyou-message{
+  display: none;
+  
+}
+
+/*
+===========================
+    Materialize Overrides
+===========================
+*/
+
+/* form bottom border color override */
+input[type=text].form-input, input[type=email].form-input, input[type=tel].form-input, textarea.form-input {
+  border-bottom: 1px solid #000;
+}
+
+/*  */
+
+
+/* label color */
+   .input-field label {
+     color: #000;
+   }
+/* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #000;
+   }
+/* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+/* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+
+
+   /*input[type=text].form-input.active:focus, input[type=email].form-input:focus, input[type=tel].form-input:focus, textarea.form-input.focus {
+     border-bottom: 1px solid #000;
+   }
+
+   .input-field textarea[class=materialize-textarea]:focus {
+   border-bottom: 1px solid #000;
+   box-shadow: 0 1px 0 0 #000;
+   }
+
+   input[type=text]&:focus:not([readonly]) {
+       border-bottom: 1px solid #000;
+       box-shadow: 0 1px 0 0 #000;
+     }*/
+
+   /*.active {
+     color: #000;
+   }*/

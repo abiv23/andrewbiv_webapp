@@ -50,7 +50,7 @@
   transform-origin: 100%; /* make pivot point the far right */
   transform: rotate(90deg);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 2.7, 0, 3.91); /* makes tick shake like a clock, get from chrome tools inspection */
+  transition-timing-function: cubic-bezier(0, 0.97, 0.27, 2.07); /* makes tick shake like a clock, get from chrome tools inspection */
 }
 
 .hour-hand {
@@ -100,21 +100,21 @@
   transform-origin: 100%; /* make pivot point the far right */
   transform: rotate(90deg);
   transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 2.7, 0, 3.91); /* makes tick shake like a clock, get from chrome tools inspection */
+  transition-timing-function: cubic-bezier(0, 0.97, 0.27, 2.07); /* makes tick shake like a clock, get from chrome tools inspection */
 }
 
 .footer-hours-hand {
   width: 1.2rem;
-  height: .1rem;
+  height: .08rem;
 }
 
 .footer-min-hand {
-  width: 1.2rem;
+  width: 1.4rem;
   height: .08rem;
 }
 
 .footer-second-hand {
-  width: 1.2rem;
+  width: 1.5rem;
   background: red;
   height: .05rem;
 }
