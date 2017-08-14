@@ -29,7 +29,11 @@
 
 .thankyou-message{
   display: none;
-  
+
+}
+
+.submit-text {
+  color: black;
 }
 
 /*
