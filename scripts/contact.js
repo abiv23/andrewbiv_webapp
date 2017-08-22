@@ -4,6 +4,7 @@
 ======================
 */
 
+/* form validation */
 function validateHuman(honeypot) {
     if (honeypot) { //if hidden form filled up
         event.preventDefault();
