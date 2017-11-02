@@ -1,6 +1,11 @@
-window.onload = function() {
+/*
+Countdown Clock
+*/
 
-  doTime('sep,21,2017,20:37:00');
+window.onload = function() {
+  joshIsSuspended();
+  doTime('dec,12,2014,20:37:00');
+  setInterval(function(){joshIsBack()}, 3000);
 }
 
 function doTime(then) {
@@ -24,4 +29,13 @@ function doTime(then) {
     doTime(then);
   }, 1000);
   document.body.style.backgroundColor = "#EB3300";
+}
+
+function joshIsBack(){
+  $('.josh-is-suspended').hide();
+  $('.josh-is-back').show();
+}
+
+function joshIsSuspended(){
+  $('.josh-is-back').hide();
 }
