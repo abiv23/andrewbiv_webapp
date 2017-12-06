@@ -5,7 +5,7 @@ Countdown Clock
 window.onload = function() {
   joshIsSuspended();
   doTime('dec,12,2014,20:37:00');
-  setInterval(function(){joshIsBack()}, 3000);
+  setInterval(function(){joshIsBack()}, 5000);
 }
 
 function doTime(then) {
