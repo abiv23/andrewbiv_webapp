@@ -43,6 +43,10 @@ html{
       .subnav-search {
         background-color: $grey-light;
         padding: 1rem;
+        .btn {
+          background-color: $teal-dark;
+          fill: white;
+        }
       }
     }
     main{

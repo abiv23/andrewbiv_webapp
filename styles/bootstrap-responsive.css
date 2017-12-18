@@ -25,6 +25,9 @@ html body {
   html body header .subnav-search {
     background-color: #dddddd;
     padding: 1rem; }
+    html body header .subnav-search .btn {
+      background-color: #237378;
+      fill: white; }
   html body main .jumbotron {
     padding: 0; }
     html body main .jumbotron .btn-block {
