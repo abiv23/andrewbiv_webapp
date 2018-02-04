@@ -1,13 +1,17 @@
 $(document).ready(function() {
   $(".draft-player").hide();
+  $(".draft-player").click(draftPlayer);
   $(".player").hover(playerSelected, playerDeselected);
 })
 
+function playerHover(event){
+  console.log(event);
+  playerSelected(event);
+}
+
 function playerSelected(event){
-  console.log(event.target.innerHTML);
   $(this).addClass('select-player');
   $(this).find(".draft-player").show();
-  $(this).click(draftPlayer);
 }
 
 function playerDeselected(event){
@@ -17,6 +21,16 @@ function playerDeselected(event){
 
 function draftPlayer(event){
   event.preventDefault();
+  const parent = $(this).parent();
+  const parentText = ' - ' + parent.text();
   const playerCard = event.currentTarget;
-  playerCard.remove();
+  parent.remove();
+  $(".active").append(parentText);
+  nextPick();
+}
+
+function nextPick(){
+  const nextLi = $(".active").next();
+  $(".active").removeClass("active");
+  nextLi.addClass("active");
 }
