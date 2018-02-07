@@ -1,0 +1,220 @@
+/*
+==================================
+    globals, overrides and resets
+==================================
+*/
+
+
+img {
+  height: 100%;
+  width: auto;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.black-text {
+  color: black;
+}
+
+.white-text {
+  color: white;
+}
+
+.headline {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+.text-shadow {
+  font-weight: lighter;
+  text-shadow: 1px 1px grey;
+}
+
+/*
+==========================
+    nav
+==========================
+*/
+
+nav {
+  background-color: rgb(41, 48, 62);
+  display: flex;
+}
+
+.brand-logo {
+  height: 8vh;
+}
+
+.nav-button {
+  height: 6.8vh;
+  background-color: rgb(245, 137, 48);
+  border: 2px solid rgb(245, 137, 48);
+  transition: all .2s ease-in-out;
+  border-radius: 1px;
+}
+
+.nav-button:hover {
+  transform: scale(1.02, 1);
+  background-color: orange;
+  border: 2px solid orange
+}
+
+.image-container {
+    height: 10vh;
+}
+
+.nav-links-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+
+/*
+==========================
+    hero
+==========================
+*/
+
+.hero-background-image {
+  background-image: url("../assets/images/airplane.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 60vh;
+  width: 100%;
+}
+
+.background-gradient {
+  width: auto;
+  background-size: cover;
+  background-color:rgba(211,211,211, 0.8);
+  color:#fff;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-headline {
+  display: flex;
+  align-self: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  text-shadow: 1px 1px grey;
+}
+
+/*
+==========================
+    infographic
+==========================
+*/
+
+.infographic-container{
+  height: 80vh;
+  background-color: rgb(41, 48, 62);
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.airline-infographic {
+  height: 60vh;
+  width: 100%;
+  background-color: rgb(41, 48, 62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+==========================
+    content
+==========================
+*/
+
+.content-container {
+  background-color: rgb(245, 137, 48);
+  border: 20px solid rgb(245, 137, 48);
+}
+
+.content-card {
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  border-top: 20px solid lightgrey;
+  border-right: 40px solid grey;
+  border-bottom: 20px solid lightgrey;
+  border-left: 40px solid grey;
+}
+
+.content {
+  font-size: 1.25rem;
+  font-weight: lighter;
+}
+
+.content-img {
+  margin-right: 1rem;
+}
+
+/*
+==========================
+    whitepaper
+==========================
+*/
+
+.whitepaper-container {
+  background-color: rgb(255,255,255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whitepaper-content {
+  height: 30rem;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fox-whitepaper {
+  background-image: url("../assets/images/fox_whitepaper.png");
+  background-size: cover;
+}
+
+.healthcare-journeys {
+  background-image: url("../assets/images/healthcare-journeys.png");
+  background-size: cover;
+}
+
+.whitepaper-link {
+  height: 100%;
+  width: 100%;
+}
+
+.demo-toast:hover{
+  color: white;
+}
+
+/*
+==========================
+    footer
+==========================
+*/
+
+footer.page-footer {
+  background-color: rgb(245, 137, 48);
+  border: 2px solid rgb(245, 137, 48);
+}
