@@ -7,7 +7,7 @@ var options = [{
     selector: '#demoToast',
     offset: 20,
     callback: function(el) {
-        Materialize.toast('<a class="demo-toast" href="https://www.clickfox.com/demo-request">' + 'Let&rsquo;s take a look at a custom Demo' + '</a>', 18000)
+        Materialize.toast('<a class="demo-toast" href="https://www.clickfox.com/#airline_whitepaper">' + 'Let&rsquo;s take a look at the White Paper!' + '</a>', 20000)
     }
 
 }];
