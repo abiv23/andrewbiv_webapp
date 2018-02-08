@@ -136,14 +136,11 @@ nav {
   color: white;
 }
 
-.download-img-container {
-  height: 8vh;
-  width: 100%;
-}
-
 .download-button-container{
   display: flex;
   justify-content: center;
+  height: 8vh;
+  width: 100%;
 }
 
 /*
