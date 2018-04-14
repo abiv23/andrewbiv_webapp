@@ -1,5 +1,6 @@
 /* starts to go wonky at 680px */
 
+
 /* Global overrides */
 body {
     margin: 0;
@@ -8,6 +9,8 @@ body {
 img {
   height: 100%;
 }
+
+/* font-family: 'Patua One', cursive; */
 
 
 /*
@@ -25,10 +28,10 @@ top nav
 
 .nav-logo-container {
   display: flex;
+  justify-content: center;
   height: 15vh;
-  width: 60%;
+  width: 100%;
   align-items: center;
-  padding-left: 2rem;
 }
 
 .logo {
@@ -56,8 +59,18 @@ top nav
   height: 100%;
 }
 
+.btn-login-save {
+  background-color: blue;
+  box-shadow: 1px 1px black;
+}
+
 .btn-login:hover {
   background-color: red;
+  box-shadow: 1px 1px black;
+}
+
+.btn-login-save:hover {
+  background-color: blue;
   box-shadow: 1px 1px black;
 }
 
@@ -66,6 +79,11 @@ top nav
 main homepage
 =====================
 */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
 
 .hero-background-image{
   background-image: url("../assets/images/field-background.jpg");
@@ -93,7 +111,7 @@ main homepage
 }
 
 .responsive-img {
-  max-height: 70vh;
+  max-height: 30vh;
   padding-top: 1%;
   border-radius: 25px;
 }
@@ -103,11 +121,25 @@ main homepage
   color: black;
 }
 
+.headline-text {
+  font-family: 'Patua One', cursive;
+}
+
 /* materialize overrides end */
 
 .draft-background{
   background-color: rgb(1, 52, 105);
+  margin-top: -1.5rem;
 }
+
+.draft-heading {
+  font-family: 'Overpass Mono', monospace;
+}
+
+.draft-collection {
+  font-size: 1.75rem;
+}
+
 
 /* hover affect from here: https://codepen.io/ovdojoey/pen/BomKyZ */
 .collection .collection-item.select-player {
@@ -142,19 +174,6 @@ main homepage
   border: 1px solid red;
 }
 
-.top-50-links {
-  display: flex;
-  justify-content: center;
-  height: 10vh;
-  border: 1px solid red;
-}
-
-.top-links-heading {
-  display: flex;
-  font-size: 1rem;
-  font-family: monospace;
-}
-
 .available-players{
   height: auto;
   background-color: darkgrey;
@@ -165,14 +184,23 @@ main homepage
   height: auto;
 }
 
+.save-draft {
+  background-color: black;
+  color: white;
+}
+
+.reset-draft {
+  background-color: black;
+  color: white;
+}
+
 /*
 ==================
 footer
 ==================
 */
 
-.footer-container {
-  height: 10vh;
-  width: 100%;
-  background-color: rgb(1, 52, 105);
+/* materialize override  */
+footer#aboutToast.page-footer.grey.lighten-3 {
+  margin-top: -1.5rem;
 }

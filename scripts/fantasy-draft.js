@@ -1,8 +1,8 @@
 $(document).ready(function() {
   $(".draft-player").hide();
   $(".draft-player").click(draftPlayer);
-  $(".save-draft").click(saveDraft);
-  $(".reset-draft").click(resetDraft);
+  $(".saveDraft").click(saveDraft);
+  $(".resetDraft").click(resetDraft);
   loadDraft();
   $(".player").hover(playerSelected, playerDeselected);
 })
