@@ -2,6 +2,7 @@ $(document).ready(function() {
   $(".draft-player").hide();
   $(".draft-player").click(draftPlayer);
   $(".save-draft").click(saveDraft);
+  $(".reset-draft").click(resetDraft);
   loadDraft();
   $(".player").hover(playerSelected, playerDeselected);
 })
@@ -75,4 +76,9 @@ function nextPick(){
   const nextLi = $(".active").next();
   $(".active").removeClass("active");
   nextLi.addClass("active");
+}
+
+function resetDraft(){
+  localStorage.clear();
+  location.reload();
 }
