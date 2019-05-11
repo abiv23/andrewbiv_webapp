@@ -133,11 +133,17 @@ main {
 }
 
 .draft-heading {
-  font-family: 'Overpass Mono', monospace;
+  font-family: 'Patua One', cursive;
 }
 
 .draft-collection {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
+  font-family: 'Overpass Mono', monospace;
+  padding-left: 3.5rem;
+}
+
+.background-shadow {
+  box-shadow: 3px 5px 8px -1px rgba( 15, 15, 15, .8 ), -3px 5px 8px -1px rgba( 15, 15, 15, .8 );
 }
 
 
@@ -147,6 +153,10 @@ main {
   background-color: lightgrey;
   text-decoration: underline;
   box-shadow: 0 0 20px black;
+  text-shadow: 3 3 40px darkgrey;
+  font-size: 1.1rem;
+  border-left: 5px solid darkgrey;
+  font-weight: bold;
 }
 
 .draft-player{
@@ -167,6 +177,7 @@ main {
 
 .active {
   font-weight: bold;
+  font-size: 1.75rem;
 }
 
 .top-50-list {
@@ -187,11 +198,25 @@ main {
 .save-draft {
   background-color: black;
   color: white;
+  transition:0.3s ease all;
 }
 
 .reset-draft {
   background-color: black;
   color: white;
+  transition:0.3s ease all;
+}
+
+.save-draft:hover {
+  background-color: grey;
+}
+
+.reset-draft:hover {
+  background-color: darkgrey;
+}
+
+.save-draft:focus {
+  background-color: grey;
 }
 
 /*
